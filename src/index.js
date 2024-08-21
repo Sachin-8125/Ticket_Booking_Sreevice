@@ -6,7 +6,7 @@ const {PORT} = require('./config/serverConfig');
 const apiRoutes = require('./routes/index');
 const db = require('./models/index');
 
-const setUpAndStartServer = ()=> {
+const setupAndStartServer = ()=> {
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({extended: true}));
 
@@ -20,4 +20,4 @@ const setUpAndStartServer = ()=> {
     });
 }
 
-setUpAndStartServer();
+setupAndStartServer();
